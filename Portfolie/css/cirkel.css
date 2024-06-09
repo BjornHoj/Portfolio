@@ -65,9 +65,11 @@ body {
     text-align: center;
 }
 
-.nodejs-logo {
+.kea-logo {
     width: 100px;
     height: 100px;
+    animation: rotation 5s forwards;
+    
 }
 
 .rotating-circle {
@@ -150,6 +152,12 @@ body {
         width: 90%;
         height: 90%;
     }
+
+    .kea-logo {
+        animation: rotation 5s linear;
+       height: 60px;
+       width: 60px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -184,9 +192,10 @@ body {
         height: 80%;
     }
 
-    .nodejs-logo {
-        width: 80px;
-        height: 80px;
+    .kea-logo {
+        animation: rotation 5s linear;
+       height: 50px;
+       width: 50px;
     }
 
     .center-content p {
@@ -204,6 +213,11 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-#icon8{
-    background-image: url();
-}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
