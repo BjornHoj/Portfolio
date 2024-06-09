@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --Withe:aliceblue;
+    --grey:#24262b;
+    --black:#111;
+    --purple:#800080;
+    --blue:#0000ff;
+}
+
+
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+
+
+li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  html {
+
+    font-size: 80%;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+
+.sektion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    background-color: var(--grey);
+    margin-bottom: 2.5em;
+    margin-top: 2.5em;
+}
+
+.image-container {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.Ide_udvikling {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.mindmap, .brainstorm {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin-top: 10px;
+}
+
+/* Medieforespørgsel til skærme under 1000px bredde */
+@media (max-width: 1000px) {
+    .sektion1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    
+
+    .image-container {
+        grid-template-rows: auto auto;
+    }
+
+    .grid1_1 {
+        grid-template-columns: 1fr 1fr; /* Behold 1fr 1fr for at holde dem side om side */
+    }
+
+    .brainstorm{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .sektion1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    
+
+    .image-container {
+        grid-template-rows: auto auto;
+    }
+
+    .grid1_1 {
+        display: block;
+    }
+
+    .brainstorm{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
+
+
+.sektion2 {
+    display: grid; /*Gør det til et grid*/
+    width: 80%; /* hvor meget det må fylde*/
+    background-color: var(--grey);
+    /* gør at sektionen er i midten af skærmen*/
+    color: aliceblue;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-bottom: 2.5em;
+    margin-top: 2.5em;
+}
+
+.grid1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Standard grid layout */
+    gap: 20px; /* Afstand mellem elementerne */
+}
+
+/* Ændr grid layout til 1fr 1fr, når skærmbredden er under 1000px */
+@media screen and (max-width: 1000px) {
+    .grid1_1_1_1 {
+        grid-template-columns: 1fr 1fr; /* Ændret til 1fr 1fr */
+    }
+}
+
+
+   
+.sektion_3{
+    
+    
+    margin-left: auto;  
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+.html{
+    width:100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.premierpro{
+    width:100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.Figma1{
+    width:100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.lighthouse{
+    width:100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+
+/*viser sektion 1 som "block" når skærmen er under 600px*/
+@media screen and (max-width: 600px) { 
+    .sektion1{
+        display: block;
+        
+    }   
+}
+
+
+/*Gør at content i main ikke bliver størrer end 1400 px - margin gør det centreret*/
+main{
+    margin: 0 auto;
+max-width: 1400px;
+}
+
+h1{
+    margin-block-start: 1em;
+    font-size: 4rem;
+ 
+}
+
+h3{
+    margin-block-start: 1em;
+    font-size: 4rem;
+}
+
+p{
+    margin: 10px;
+    line-height: 2em;
+}
+
+
+
+/*viser sektion 1 som "block" når skærmen er under 600px*/
+@media screen and (max-width: 1000px) { 
+    .velkommenside{
+        display: block;
+    }   
+
+    h1, h3 {
+        font-size: 2rem;
+    }
+
+    p{
+        margin: 10px;
+    }
+
+}
+
+.link{
+    text-decoration: underline;
+}
+
+h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    h5{
+        display: grid;
+        font-size: 18px;
+        margin-bottom: 10px;
+        justify-content: center;
+        
+    }
+
+}
+
+iframe{
+    width: 100%;
+  height: auto;
+  aspect-ratio: 16/9
+}
+
+
+.nav-logo{
+
+    aspect-ratio: 16/9;
+    height: 70px;
+    width: auto;
+}
+
+
+.portræt{
+    height: 80%;
+ width: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+

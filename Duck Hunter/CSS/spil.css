@@ -1,0 +1,276 @@
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+#game_background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  background-image: url(/img/Artboard\ 1.svg);
+  background-size: cover;
+}
+
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Spilelementer og mellemgrund */
+/* Husk både container og sprite til de elementer du skal klikke på */
+
+#carljohan_container,
+#carljohan_container1,
+#carljohan_container2 {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 347/264;
+}
+
+#carljohan_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/and.svg);
+  background-size: cover;
+}
+#carljohan_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/And\ 2.svg);
+  background-size: cover;
+}
+#carljohan_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_b.svg);
+  background-size: cover;
+}
+
+#fluesvamp_container {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 7/8;
+  transform-origin: center bottom;
+}
+
+#fluesvamp_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fluesvamp_2.svg);
+  background-size: cover;
+}
+
+#mellemgrund {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mellemgrund.svg);
+  background-size: cover;
+  pointer-events: none;
+}
+
+#game_foreground {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/forgrund.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+/* UI elementer */
+
+#game_ui {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+/************************** POINT **************************/
+#score_board {
+  position: absolute;
+  top: 64.6%;
+  left: 7%;
+  width: 28%;
+  aspect-ratio: 8/3;
+  background-image: url(../img/ui_points.svg);
+  background-size: cover;
+}
+#point {
+  font-size: 6cqi;
+  font-family: "Baloo 2";
+  font-weight: 600;
+  color: yellow;
+  position: absolute;
+  top: 10%;
+  left: 4.1%;
+  width: 24%;
+  text-align: center;
+  /* outline: 2px solid white; */
+}
+/************************** LIV **************************/
+#energy_board {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  width: 36%;
+  aspect-ratio: 3/1;
+  background-image: url(../img/ui_life.svg);
+  background-size: cover;
+}
+#heart1,
+#heart2,
+#heart3 {
+  position: absolute;
+  top: 39%;
+  width: 14%;
+  aspect-ratio: 81.9/72.4;
+  background-image: url(../img/heart.svg);
+  background-size: cover;
+}
+#heart1 {
+  left: 44%;
+}
+#heart2 {
+  left: 59.3%;
+}
+#heart3 {
+  left: 74.5%;
+}
+
+#liv {
+  font-size: 3cqi;
+  font-family: "Baloo 2";
+  font-weight: 600;
+  color: rgb(255, 234, 234);
+  position: absolute;
+  top: 38%;
+  left: 39%;
+  width: 24%;
+  text-align: center;
+  /* outline: 2px solid white; */
+}
+/************************** TIMER **************************/
+#time_board {
+  position: absolute;
+  top: 64%;
+  left: 1%;
+  width: 6%;
+  aspect-ratio: 100/160;
+  background-image: url(../img/ui_time.svg);
+  background-size: cover;
+}
+/*Indholdet af timeglas (sandet som skal fyldes op)*/
+#timeglas {
+  position: absolute;
+  background-image: url(../img/sand.svg);
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 125/200;
+  /* for at skjule lidt af væsken i toppen af flasken */
+  clip-path: inset(100% 0% 0% 0%);
+}
+
+/********************** Start- og slutskærme ***********************/
+/* Brug evt. inspektoren til at se dem ved at fjerne display:none */
+
+#start {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/start.svg);
+  background-size: cover;
+}
+#play {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  width: 20%;
+  aspect-ratio: 470/280;
+  background-image: url(../img/play_btn.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#game_over {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gameover.svg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#spiligen_1 {
+  position: absolute;
+  top: 52%;
+  left: 55%;
+  width: 20%;
+  aspect-ratio: 640/280;
+  background-image: url(../img/spil_igen.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#level_complete {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url();
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#spiligen_2 {
+  position: absolute;
+  top: 35%;
+  left: 40.5%;
+  width: 20%;
+  aspect-ratio: 640/280;
+  background-image: url();
+  background-size: cover;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+.grey {
+  filter: grayscale(70%);
+}
+.hue {
+  filter: hue-rotate(240deg);
+}
+.blur {
+  filter: blur(10px);
+}

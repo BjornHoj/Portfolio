@@ -1,0 +1,153 @@
+#opgaven{
+ display: grid;
+  width: 80%;
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  background-color: var(--grey);
+}
+
+.løsning_billede{
+aspect-ratio: 16/9;
+   width: 90%;
+   height: auto;
+margin-top: 120px;
+margin-right: 10px;
+}
+
+.billede2{
+   
+    width: 100%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.billede1{
+   
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.billede3{
+   
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
+.box1{
+    max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: auto;
+}
+
+.box2{
+    max-width: 70%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: auto;
+}
+
+.box3{
+    max-width: 70%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 1000px) { 
+    #opgaven{
+        display: block;
+     
+    }   
+
+    #Icon1{
+        display: block;
+    }
+
+    h1, h3 {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    .billede2{
+  
+        width: 40%;
+        height: 40%
+    }
+
+    .billede1{
+   
+      display: grid;
+      width: 15%;
+      height: 15%
+  
+  }
+
+  .billede3{
+   
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+
+    .box1{
+        max-width: 50%;
+      justify-content: center;
+      align-items: center;
+      display: block;
+      margin: auto;
+    
+    }
+
+    .box2{
+      max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin: auto;
+  }
+
+    .box_løsning{
+        aspect-ratio: 16/9;
+          max-width: auto;
+          max-height: auto;
+       margin: auto;
+       display: grid;
+        }
+
+        .løsning_billede{
+          aspect-ratio: 16/9;
+          width: 90%;
+          height: 90%;
+         display: grid;
+          margin: auto;
+            
+            }
+
+}
+
+

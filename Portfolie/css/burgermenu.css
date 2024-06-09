@@ -1,0 +1,123 @@
+.navbar {
+  display: flex; /* Gør at menuen står på linje */
+  justify-content: space-between; /* Gør at der er mellemrum i mellem */
+  align-items: center;
+  padding: 0rem 1.5rem; /* 1rem er afstanden mellem top og bund af navbaren og 1.5 er fra siderne */
+  z-index: 2; /* Gør at baren ligger "over" slidermenuen når den bliver til en burgermenu */
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+header{
+
+  background-color: #24262b;
+}
+/* Hamburgeren gøres usynlig */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.1s ease-in-out;
+  background-color: var(--Withe);
+}
+
+
+
+
+
+.hamburger {
+  display: none; /* Skjuler hamburger-menuen som standard */
+}
+
+/* Styling af menuen */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem; /* afstand mellem selve menupunkterne */
+}
+
+.nav-link {
+  font-size: 1.6rem; /* Størrelsen på menupunkter */
+  font-weight: 400;
+  color: var(--Withe)
+}
+
+.nav-link:hover {
+  color: #482ff7; /* Farve ved hover */
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #ffffff;
+
+}
+
+@media (max-width: 1000px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #24262b;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block; /* Viser hamburger-menuen når skærmen er mindre end 1000px */
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .navbar {
+    padding: 1rem 20rem; /* Øger padding for større skærme */
+  }
+
+
+
+  .navbar {
+    display: flex; /* Gør at menuen står på linje */
+    justify-content: space-between; /* Gør at der er mellemrum i mellem */
+    align-items: center;
+    padding: 1rem 1.5rem; /* 1rem er afstanden mellem top og bund af navbaren og 1.5 er fra siderne */
+    z-index: 2; /* Gør at baren ligger "over" slidermenuen når den bliver til en burgermenu */
+  }
+
+}
+
+@media screen and (min-width: 1900px) {
+  .navbar {
+    padding: 1rem; /* Standard padding for meget store skærme */
+  }
+}

@@ -1,0 +1,133 @@
+/************* ANIMATIONER *************/
+
+/* ny hoppe animation */
+.hop {
+  animation: hop 4s infinite;
+}
+
+@keyframes hop {
+  0% {
+    scale: 0 0;
+  }
+  50% {
+    scale: 1 1;
+  }
+  100% {
+    scale: 0 0;
+  }
+}
+
+/* falde animation */
+.fald {
+  animation: fald 2s infinite linear;
+}
+
+@keyframes fald {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 360%;
+  }
+}
+.faldpos1 {
+  top: -30%;
+  left: 10%;
+}
+.faldpos2 {
+  top: -30%;
+  left: 22%;
+}
+.faldpos3 {
+  top: -30%;
+  left: 38%;
+}
+.faldpos4 {
+  top: -30%;
+  left: 63%;
+}
+.faldpos5 {
+  top: -30%;
+  left: 80%;
+}
+
+.pos1 {
+  top: 6%;
+  left: 0%;
+}
+.pos2 {
+  top: 22%;
+  left: 19%;
+}
+.pos3 {
+  top: 9%;
+  left: 33%;
+}
+.pos4 {
+  top: 3%;
+  left: 77%;
+}
+.pos5 {
+  top: 60%;
+  left: 69%;
+}
+
+/* forsvind animation */
+.forsvind {
+  animation: forsvind 2s 1 both;
+}
+
+@keyframes forsvind {
+  from {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    rotate: 720deg;
+    scale: 0;
+  }
+}
+
+/**************** TIMER *****************/
+
+/* animation af clip-path masken (top right bund left)*/
+.timer {
+  animation-name: timer_kf;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes timer_kf {
+  0% {
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    clip-path: inset(0% 0 0 0);
+  }
+}
+
+/************* ANDRE CLASSER *************/
+
+.frys {
+  animation-play-state: paused;
+}
+
+.delay1 {
+  animation-delay: 0s;
+}
+.delay2 {
+  animation-delay: 1s;
+}
+.delay3 {
+  animation-delay: 2s;
+}
+
+.speed1 {
+  animation-duration: 1s;
+}
+.speed2 {
+  animation-duration: 2s;
+}

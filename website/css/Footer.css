@@ -1,0 +1,13 @@
+footer {
+    font-family: Verdana;
+    color: #fdfdfd;
+    background-color: #233249;
+    padding: 20px;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+  
+  footer p:first-child{
+  margin-bottom: 5px;
+  }

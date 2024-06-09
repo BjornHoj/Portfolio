@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <!-- Link til diverse sheet -->
+    <!-- <link rel="stylesheet" href="../css/topbar.css"/>  -->
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/burgermenu1.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/body.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/sektion.css" />
+
+    <!-- <link rel="stylesheet" href="./css/cirkel.css"> -->
+
+    <!-- Henter iconerne til topbar fra en hjemmeside  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- En css-samiling (129)  Copyright 2014-2024 Vladimir Kharlampidi- Released under the MIT License -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Henter iconerne til footeren fra en hjemmeside  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- div'en for top-baren -->
+    <!-- <div class="top-bar">
+    <span><ion-icon name="call-outline"></ion-icon> 12346789</span>
+    <h2>Test-Site-Nummer1</h2>
+    <ul>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+    </ul>
+  </div> -->
+
+    <!-- heder med logo og menu -->
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <a href="../../index.html" class="nav-logo"><img class="nav-logo" src="../billeder/Forsiden/Logo.png" alt=""></a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="Intro.html" class="nav-link">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a href="web.html" class="nav-link">Web</a>
+            </li>
+            <li class="nav-item">
+              <a href="ux.html" class="nav-link">UX/UI</a>
+            </li>
+            <li class="nav-item">
+              <a href="animation.html" class="nav-link">Animation</a>
+            </li>
+            <li class="nav-item">
+              <a href="indhold.html" class="nav-link">Indhold</a>
+            </li>
+          </ul>
+
+          <!-- Adder hamburger -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Into</h1>
+        <!-- Hero container - der swiper billeder  -->
+        <div class="container_slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="../billeder/Intro/Filezilla.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../billeder/Intro/bagedyst.png" alt="" />
+              </div>
+             
+            </div>
+            <!-- giver "prikkerne på slideren i bunden" -->
+            <div class="swiper-pagination"></div>
+
+            <!-- pilene på slideren -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- sektion 1 - efter hero -->
+
+        <div class="sektion1">
+         <div>
+         <h1>Figma & Storyboard</h1>
+          <p>Vi blev introduceret til Figma, et værktøj til design og prototyping, hvor vi lavede præsentationskort. Vi lærte også om idéudvikling, hvor vi arbejdede med at brainstorme og udvikle konceptet for vores video. Derudover fik vi indsigt i opbygningen af en film, herunder storyboard, scenografisk planlægning og de tekniske aspekter af filmproduktion. Disse færdigheder gav os en solid grundlæggende forståelse, som vi kunne anvende i vores arbejde med at skabe en intro video til en serie, med os selv i hovedrollen.</p>
+         </div>
+
+          <div class="image-container">
+            <img
+              class="Ide_udvikling"
+              src="../billeder/Intro/Basic_info_figa1.png"
+              alt="Ide Udvikling"
+            />
+            <div class="grid1_1">
+              <img
+                class="mindmap"
+                src="../billeder/Intro/Mindmap.png"
+                alt="Mindmap"
+              />
+              <img
+                class="brainstorm"
+                src="../billeder/Intro/klipning.png"
+                alt="Brainstorm"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="sektion2">
+          <h1>Et udpluk fra intro temaet</h1>
+          <div class="grid1_1_1_1">
+            <div class="kodning">
+              <img class="html" src="../billeder/Intro/1200px-FileZilla_logo.svg.png" alt="" />
+              <p>
+                Vi blev introduceret til FileZilla som bruges til at overføre filer mellem en lokal computer og en server på internettet. 
+              </p>
+            </div>
+            <div class="Premier">
+              <img
+                class="premierpro"
+                src="../billeder/Intro/Skærmbillede 2024-06-04 172310.png"
+                alt=""
+              />
+              <p>
+                Eksempel på et professionelt storyboard, hver skitse repræsenterer en nøglescene og detaljer som kameravinkler, hvilket hjælper med at visualisere og organisere projektets forløb før optagelsen begynder.
+              </p>
+            </div>
+            <div class="Figma">
+              <img
+                class="Figma1"
+                src="../billeder/Intro/StorybordEx.png"
+                alt=""
+              />
+              <p>
+                Eksempel på et storyboard, som jeg ville lave, hver skitse repræsenterer en nøglescene og inkluderer detaljer som kameravinkler, bevægelser, dialog og handlinger mere groft. 
+Til at hjælpe med planlægge forløbet for en optagelse. 
+
+              </p>
+            </div>
+            <div class="test">
+              <img
+                class="lighthouse"
+                src="../billeder/Intro/Titelsekvens.png"
+                alt=""
+              />
+              <p>
+                Eksempel på en titelsekvens som er en indledende sekvens i en film eller tv-show, der vises i begyndelsen af hver episode eller film. Den typisk indeholder titlen på værket, navnene på hovedrolleindehaverne, instruktøren, producenten og andre nøglepersoner. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="opgaven" class="grid1_1">
+          <div id="Icon1" class="grid1_1">
+            <div class="box1">
+              <img class="billede1" src="../billeder/Spørgsmål120.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>Opgaven</h5>
+                </strong> Vi var en gruppe på fire personer, der skulle filme og producere en introvideo med os selv i hovedrollerne, baseret på de teknikker, vi havde lært.
+              </p>
+            </div>
+
+            <div class="box2">
+              <img class="billede2" src="../billeder/Bulb1.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>løsning</h5>
+                </strong> Vi lavede et storyboard, som gav et overblik over historien og viste, hvordan vi ville filme fra forskellige perspektiver, inden vi gik i gang med selve optagelsen af videoen.
+              </p>
+            </div>
+
+            <div class="box3">
+              <img class="billede3" src="../billeder/flueben.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>Resultatet</h5>
+                </strong> Resultatet blev en video med fokus på karakterbeskrivelser af os selv i rollerne som medarbejdere i en dagligvarebutik.
+              </p>
+            </div>
+        
+          </div>
+
+          <div class="box_løsning">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQsrb6gB2bo?si=ZZhtsciHwYBMGIRX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Klik på filmen og se resultatet</p>
+        
+          </div>
+          
+        </div>
+
+        <!-- sektion 2 - efter sektion1 -->
+      </main>
+
+      <footer>
+        <div class="footer_container">
+          <!-- gør at teksten er i rows -->
+          <div class="row">
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>Kontaktoplysninger</h4>
+              <ul>
+                <li><p>Pardisæblevej 111</p></li>
+                <li><p>Frederiskberg 2000</p></li>
+                <li><p>Telefon: 11223344</p></li>
+                <li><p>Email: Info@web-design.com</p></li>
+              </ul>
+            </div>
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>Personoplysninger</h4>
+              <ul>
+                <li><a href="../website/ommig.html">Om mig</a></li>
+              </ul>
+            </div>
+            <!-- Rækken ned -->
+            <!-- <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div> -->
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>SoMe Content</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- java til burgermenuen -->
+    <script src="../java/burgermenu.js"></script>
+    <!-- java til slideren  Copyright 2014-2024 Vladimir Kharlampidi- Released under the MIT License -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../java/bannerslider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <!-- Link til diverse sheet -->
+    <!-- <link rel="stylesheet" href="../css/topbar.css"/>  -->
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/burgermenu1.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/body.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/sektion.css" />
+
+    <!-- <link rel="stylesheet" href="./css/cirkel.css"> -->
+
+    <!-- Henter iconerne til topbar fra en hjemmeside  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- En css-samiling (129)  Copyright 2014-2024 Vladimir Kharlampidi- Released under the MIT License -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Henter iconerne til footeren fra en hjemmeside  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- div'en for top-baren -->
+    <!-- <div class="top-bar">
+    <span><ion-icon name="call-outline"></ion-icon> 12346789</span>
+    <h2>Test-Site-Nummer1</h2>
+    <ul>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+    </ul>
+  </div> -->
+
+    <!-- heder med logo og menu -->
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <a href="../../index.html" class="nav-logo"><img class="nav-logo" src="../billeder/Forsiden/Logo.png" alt=""></a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="Intro.html" class="nav-link">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a href="web.html" class="nav-link">Web</a>
+            </li>
+            <li class="nav-item">
+              <a href="ux.html" class="nav-link">UX/UI</a>
+            </li>
+            <li class="nav-item">
+              <a href="animation.html" class="nav-link">Animation</a>
+            </li>
+            <li class="nav-item">
+              <a href="indhold.html" class="nav-link">Indhold</a>
+            </li>
+          </ul>
+
+          <!-- Adder hamburger -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Web</h1>
+        <!-- Hero container - der swiper billeder  -->
+        <div class="container_slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="../billeder/web/futorismefigma.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../billeder/web/Skærmbillede 2024-06-04 174323.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../billeder/web/wireframeweb.png" alt="" />
+              </div>
+            </div>
+            <!-- giver "prikkerne på slideren i bunden" -->
+            <div class="swiper-pagination"></div>
+
+            <!-- pilene på slideren -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- sektion 1 - efter hero -->
+
+        <div class="sektion1">
+         <div>
+          <h1>Grid & Designanalyse</h1>
+          <p>Vi blev introduceret til grid, som er en struktureret layoutmetode, der bruges til at organisere og justere elementer i html ved hjælp af css. 
+            Vi arbejdede videre i Figma, hvor vi ud fra en selvvalgt stil - i mit tilfælde futurismen - skulle lave et redesign af en agurkeside. Med Figma's værktøjer til design og prototyping kunne jeg eksperimentere med futuristiske elementer og layoutidéer for at skabe et nyt design. 
+            .</p>
+         </div>
+
+          <div class="image-container">
+            <img
+              class="Ide_udvikling"
+              src="../billeder/web/Grid.png"
+              alt="Ide Udvikling"
+            />
+            <div class="grid1_1">
+              <img
+                class="mindmap"
+                src="../billeder/web/Stiløvelseagurker.png"
+                alt="Mindmap"
+              />
+              <img
+                class="brainstorm"
+                src="../billeder/web/Skærmbillede 2024-06-04 174931.png"
+                
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="sektion2">
+          <h1>Et udpluk fra temaet web</h1>
+          <div class="grid1_1_1_1">
+            <div class="kodning">
+              <img class="html" src="../billeder/web/Skærmbillede 2024-06-04 173800.png" alt="" />
+              <p>
+                HTML er det standard sprog, der bruges til at oprette websider. Det består af en række tags eller koder, der beskriver strukturen og indholdet af en webside.
+                <br>
+                HTml'en brugte jeg til at opbygge min web og mobilside.  
+              </p>
+            </div>
+            <div class="Premier">
+              <img
+                class="premierpro"
+                src="../billeder/web/Skærmbillede 2024-06-04 173829.png"
+                alt=""
+              />
+              <p>
+                CSS er et stilarkssprog, der bruges til at definere udseendet og layoutet af HTML-dokumenter. Med CSS kan udviklere ændre farver, skrifttyper, størrelser, afstande og andre visuelle egenskaber på websider. 
+              <br>
+              CSS'en brugte jeg til at designe min web og mobilside.
+              </p>
+            </div>
+            <div class="Figma">
+              <img
+                class="Figma1"
+                src="../billeder/web/gestaltlovene-billede.png"
+                alt=""
+              />
+              <p>
+                Gestaltlove er principper i psykologi, der forklarer, hvordan mennesker opfatter og organiserer visuel information. Disse love hjælper med at forstå, hvordan vi genkender mønstre og former.
+Ved at anvende disse love kan designere skabe mere effektive og æstetisk tiltalende layouts og brugergrænseflader.
+
+Da vi have fået udleveret wireframe og layout, til vores site, brugte jeg ikke selvstændigt Gestallovene, men fik en forståelse for dem.
+              </p>
+            </div>
+            <div class="test">
+              <img
+                class="lighthouse"
+                src="../billeder/web/Skærmbillede 2024-06-07 130453.png"
+                alt=""
+              />
+              <p>
+                Medie querie er en CSS-selector, der bruges til at målrette elementer baseret på deres attributter og gøre et site responsivt.  
+             <br>
+             Jeg brugte medie querie til at gøre min mobil og website responsivt, efter princippet mobilefirst.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="opgaven" class="grid1_1">
+          <div id="Icon1" class="grid1_1">
+            <div class="box1">
+              <img class="billede1" src="../billeder/Spørgsmål120.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>Opgaven</h5>
+                </strong>Vi fik til opgave at designe et websted først med fokus på mobilbrugeroplevelsen ved hjælp af princippet om "mobile first". Derefter blev vi bedt om at tilpasse designet, så det var responsivt og kunne tilpasses forskellige skærmstørrelser, herunder tablets og desktop-computere.
+              </p>
+            </div>
+
+            <div class="box2">
+              <img class="billede2" src="../billeder/Bulb1.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>løsning</h5>
+                </strong> Jeg anvendte de færdigheder, jeg havde lært inden for HTML, CSS, layoutdiagrammer, wireframes, medieforespørgsler og visuelt design, herunder valg af farver og skriftstørrelser.
+              </p>
+            </div>
+
+            <div class="box3">
+              <img class="billede3" src="../billeder/flueben.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>Resultatet</h5>
+                </strong> Jeg udviklede to meget forskellige websteder som en del af projektet. I mobilfirst lagde jeg primært vægt på at lære forskellige CSS-attributter at kende. 
+                I desktop-webstedet var mit fokus mere rettet mod at gøre webstedet æstetisk tiltalende. Jeg valgte farver og skrifttyper og tilpassede billeder for at forbedre den visuelle og give en mere behagelig oplevelse for brugerne. 
+                
+              </p>
+            </div>
+        
+          </div>
+
+          <div class="box_løsning">
+            <img
+              class="løsning_billede"
+              src="../billeder/web/Mobil.png"
+              width="250px"
+              alt=""/>
+            <br>
+            <br>
+  
+
+            <a class="link" href="../../mobilesite/" target="_blank">Se mobil løsning</a>
+
+            <img
+            class="løsning_billede"
+            src="../billeder/web/website.png"
+            width="250px"
+            alt=""/>
+            <br>
+            <br>
+  
+
+            <a class="link" href="../../website/" target="_blank">Se website</a>
+          
+          </div>
+          
+        </div>
+
+        <!-- sektion 2 - efter sektion1 -->
+      </main>
+
+      <footer>
+        <div class="footer_container">
+          <!-- gør at teksten er i rows -->
+          <div class="row">
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>Kontaktoplysninger</h4>
+              <ul>
+                <li><p>Pardisæblevej 111</p></li>
+                <li><p>Frederiskberg 2000</p></li>
+                <li><p>Telefon: 11223344</p></li>
+                <li><p>Email: Info@web-design.com</p></li>
+              </ul>
+            </div>
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>Personoplysninger</h4>
+              <ul>
+                <li><a href="../website/ommig.html">Om mig</a></li>
+              </ul>
+            </div>
+            <!-- Rækken ned -->
+            <!-- <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div> -->
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>SoMe Content</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- java til burgermenuen -->
+    <script src="../java/burgermenu.js"></script>
+    <!-- java til slideren  Copyright 2014-2024 Vladimir Kharlampidi- Released under the MIT License -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../java/bannerslider.js"></script>
+  </body>
+</html>

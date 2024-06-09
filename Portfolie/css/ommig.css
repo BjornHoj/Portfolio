@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --Withe: aliceblue;
+  --grey: #24262b;
+  --black: #111;
+  --purple: #800080;
+  --blue: #0000ff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 80%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+}
+
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Medieforespørgsel til skærme under 1000px bredde */
+@media (max-width: 1100px) {
+  .grid1_1 {
+    display: block;
+  }
+
+  #portræt {
+    display: grid;
+  height: 80%;
+
+margin-left: 10px;
+}
+
+}
+
+.html {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/*Gør at content i main ikke bliver størrer end 1400 px - margin gør det centreret*/
+main {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+h3 {
+  margin-block-start: 1em;
+  font-size: 4rem;
+  color: aliceblue;
+}
+
+p {
+  margin: 10px;
+  line-height: 2em;
+  color: aliceblue;
+}
+
+h4 {
+  color: aliceblue;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.nav-logo {
+  aspect-ratio: 16/9;
+  height: 70px;
+  width: auto;
+}
+
+#portræt {
+    display: grid;
+  height: 80%;
+margin-top: 70px;
+margin-left: 10px;
+}

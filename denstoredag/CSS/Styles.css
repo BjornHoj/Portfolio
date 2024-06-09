@@ -1,0 +1,128 @@
+
+html{
+  height: 100%;
+  
+  }
+  body {  
+    margin: 0;
+    font-family: sans-serif; 
+    display: flex; 
+    min-height: 100%; 
+    flex-direction: column; 
+    background-image:url(/billeder/Skærmbillede1000_reduceret.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  flex-direction:column;
+  }
+  
+   footer{
+    margin-top: auto;
+    padding-bottom: 30px;
+  } 
+  
+  
+  .wrapper1{
+    margin: 10px auto;
+  width: 70%;
+  }
+  
+  #nr1{
+    float: right;
+  
+  }
+  #nr2{
+    float: left;
+  }
+
+  #nr3{
+    float: right;
+  
+  }
+  
+  main {
+    display: grid;
+    justify-content: center;
+  
+  }
+  
+  
+  
+  h1 {
+    margin-top: 50%;
+    margin-bottom: 1%;
+    text-align: left;
+    font-size: 70px;
+    grid-column:2;
+    grid-row: 2;
+    font-family: dancing script;
+  }
+  
+  
+  @media (max-width: 650px) {
+    .menu-button-container {
+      display: flex;
+    }
+    nav {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      width: 80%;
+    }
+   
+   
+  
+
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+  
+  
+  .bryllup{
+    transform: rotate(-20deg);
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 150px;
+    right: 250px;
+  }
+  
+  .barnedåb{
+    transform: rotate(20deg);
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 150px;
+    left: 250px; 
+  }
+
+ 
+  
+  .den{
+    position: relative;
+    bottom: 110%;
+    right: 10%;
+  
+  }
+  
+  .Dag{
+    position: relative;
+    bottom: 70%;
+    right: 30%;
+  }
+  
+
+  p{
+    display: inline;
+  }
+  
+  .Foto{
+    position: absolute;
+    left: 20.17%;
+    right: 20.23%;
+    top: 12.76%;
+    bottom: 12.66%;
+
+    }
+

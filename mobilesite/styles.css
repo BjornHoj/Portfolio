@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  @font-face{
+    font-family: Revelotion;
+    src: url(/Fonts/ProtestRevolution-Regular.woff2);
+  }
+  
+  body{
+    background-color: aquamarine;
+    /* font-size: 12px; */
+  }
+  header {
+    width: 100%;
+    background-color: #117bd3;
+    align-items: center;
+    top: 0;
+    text-align: center;
+  }
+
+  h1 {
+    /* Font-family:sans-serif; */
+    color: #fdfdfd;
+    text-align: center;
+    justify-content: center;
+  
+  }
+
+  h2{
+    text-align: center;
+    justify-content: center;
+
+  }
+  p{
+    text-align: center;
+    justify-content: center;
+    font-family: Verdana;
+    line-height: 1.2em;
+    /* font-size: 0.8rem; */
+    /* hyphens: auto; */
+  }
+  p::first-line {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;  
+  }
+
+  dt {
+    font-family: Verdana;
+  }
+/* 
+  dd {
+    border: 2px dashed black;
+    border-radius: 10px;
+    margin: 5px;
+    
+  } */
+
+
+  .foto {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: auto; 
+    margin-right: auto; 
+   }  
+
+   img{
+    margin: 10px;
+   }
+
+   .grid_5-3 {
+    margin: 3vh;
+    padding: 2vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+  }
+  
+  .grid1 {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: auto auto
+    
+  }
+  .overskrif1{
+    margin-left: 5px;
+  }
+  .grid2 {
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px
+  }
+  .grid2>img{
+    grid-column-start: 2;
+  }
+  .grid2>section {
+    grid-row-start: 1;
+  }
+  
+  
+  .grid3 {
+    border: 2px solid green;
+    grid-column-start: 2;
+    grid-row-start: 1;  
+    grid-row-end: 3;
+  }
+  
+   .sektion{
+    text-align: center;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover{
+    /* transform: scale(1.2rem); */
+    color: deeppink;
+  }
+
+ .procent{
+  text-decoration: underline #1d0fb6 3px;
+ }
+
+ .procent_1{
+  text-decoration: underline dotted coral;
+ }
+

@@ -1,0 +1,52 @@
+main,
+body {
+  margin-bottom: 1rem;
+  max-width: 2200px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+
+
+ header {
+  width: 100%;
+  height: 50px;;
+  background-color: #233249;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  text-decoration-color: antiquewhite;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  
+} 
+
+h1{
+  color: aliceblue;
+}
+
+h3{
+ text-align: center;
+ font-family: Verdana;
+}
+
+footer {
+  font-family: Verdana;
+  color: #fdfdfd;
+  background-color: #233249;
+  padding: 20px;
+
+}
+
+
+
+.regler1 {
+aspect-ratio: 1920/1080;
+width: 100%;
+  background-image: url(../img/Game\ play\ -\ regler.svg);
+  background-size: cover;
+  
+}
+

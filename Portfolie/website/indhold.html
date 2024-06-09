@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <!-- Link til diverse sheet -->
+    <!-- <link rel="stylesheet" href="../css/topbar.css"/>  -->
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/burgermenu1.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/body.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/sektion.css" />
+
+    <!-- <link rel="stylesheet" href="./css/cirkel.css"> -->
+
+    <!-- Henter iconerne til topbar fra en hjemmeside  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- En css-samiling (129)  Copyright 2014-2024 Vladimir Kharlampidi- Released under the MIT License -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Henter iconerne til footeren fra en hjemmeside  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- div'en for top-baren -->
+    <!-- <div class="top-bar">
+    <span><ion-icon name="call-outline"></ion-icon> 12346789</span>
+    <h2>Test-Site-Nummer1</h2>
+    <ul>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+    </ul>
+  </div> -->
+
+    <!-- heder med logo og menu -->
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <a href="../../index.html" class="nav-logo"><img class="nav-logo" src="../billeder/Forsiden/Logo.png" alt=""></a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="Intro.html" class="nav-link">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a href="web.html" class="nav-link">Web</a>
+            </li>
+            <li class="nav-item">
+              <a href="ux.html" class="nav-link">UX/UI</a>
+            </li>
+            <li class="nav-item">
+              <a href="animation.html" class="nav-link">Animation</a>
+            </li>
+            <li class="nav-item">
+              <a href="indhold.html" class="nav-link">Indhold</a>
+            </li>
+          </ul>
+
+          <!-- Adder hamburger -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Indhold</h1>
+        <!-- Hero container - der swiper billeder  -->
+        <div class="container_slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="../billeder/Indhold/Stjernenbar.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../billeder/Indhold/Layout diagram B.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../billeder/Indhold/Lighthouse test galleri.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- giver "prikkerne på slideren i bunden" -->
+            <div class="swiper-pagination"></div>
+
+            <!-- pilene på slideren -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- sektion 1 - efter hero -->
+
+        <div class="sektion1">
+          <div>
+            <h1>virksomhed-site</h1>
+            <p>
+              Jeg deltog i en gruppe for at skabe en ny hjemmeside for en
+              eksisterende virksomhed, som var en bar. På virksomhedens
+              hjemmeside havde jeg ansvar for flere opgaver, herunder at udvikle
+              en responsiv header, implementere en formular og udføre en
+              Lighthouse-test af hjemmesiden både før og efter ændringerne. Jeg
+              udførte også en designanalyse af deres nuværende site for at få
+              indsigt i den ønskede stil og tone, som virksomheden ønskede at
+              formidle. Dette gav os et unikt indblik i, hvad vi skulle arbejde
+              videre med. Vi udførte derefter et desk research af sitet for at
+              analysere, hvilke sider og undersider der allerede eksisterede, og
+              hvad der eventuelt manglede på det fremtidige site. Efterfølgende
+              udarbejdede vi en lignende demosektion, hvor hver af os bidrog med
+              ideer til forskellige features og det ønskede designudtryk.
+              Baseret på dette udviklede vi individuelt forskellige skitser, som
+              vi præsenterede og diskuterede sammen.
+              <br>
+              <br>
+              <a class="link" href="../../Stjernen/" target="_blank">SE LØSNING</a>
+            </p>
+          </div>
+
+          <div class="image-container">
+            <img
+              class="Ide_udvikling"
+              src="../billeder/Indhold/Skærmbillede 2024-06-08 142925.png"
+              alt="Ide Udvikling"
+            />
+            <div class="grid1_1">
+              <img
+                class="mindmap"
+                src="../billeder/Indhold/Lighthouse test galleri m. forbedringer.png"
+                alt="Mindmap"
+              />
+              <img
+                class="brainstorm"
+                src="../billeder/Indhold/forms.png"
+                alt="Brainstorm"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="sektion2">
+          <h1>Et udpluk fra indhold temaet</h1>
+          <div class="grid1_1_1_1">
+            <div class="kodning">
+              <img class="html" src="../billeder/Indhold/after.png" alt="" />
+              <p>
+                Adobe After Effects er et program, der anvendes til at skabe
+                visuelle effekter og motion graphics til film, video, multimedia
+                og internettet. I forbindelse med mit passionsite brugte jeg det
+                til at lave hero-sektionen som en Lottie-fil. Denne filtype er
+                betydeligt mindre end en traditionel video, hvilket gør den mere
+                effektiv til webbrug.
+              </p>
+            </div>
+
+            <div class="Premier">
+              <img
+                class="premierpro"
+                src="../billeder/Indhold/premier.png"
+                alt=""
+              />
+              <p>
+                Adobe Premiere Pro er et videoredigeringsprogram. På mit
+                passions-site brugte jeg det til at synkronisere lyd til
+                optagelser og klippe et interview ned til præcis ét minut. Dette
+                inkluderede også tilføjelse af B-roll klip for at gøre filmen
+                visuelt interessant.
+              </p>
+            </div>
+            <div class="Figma">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/aBotI9ulkj8?si=lTe0x_iX0WqnTjFr"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p>
+                Både iframe og video er HTML-elementer, der bruges til at
+                indlejre medieindhold på websider, men de har forskellige formål
+                og funktionaliteter På passion-sitet blev begge funktioner
+                brugt, for at demonstrere forskellen.
+              </p>
+            </div>
+            <div class="test">
+              <img
+                class="lighthouse"
+                src="../billeder/Indhold/scrum.png"
+                alt=""
+              />
+              <p>
+                Scrum er en projektledelsesmetode. Under designet af en
+                virksomheds hjemmeside valgte vi at implementere Scrum-metoden.
+                Vi gjorde brug af Trello som et organisatorisk værktøj til at
+                strukturere projektet og holdt daglige, korte møder, hvor teamet
+                opdaterede hinanden om deres individuelle opgaver og fremdrift.
+                Disse møder sikrede, at alle var på samme side, og hjalp med at
+                løse eventuelle udfordringer, der opstod, hurtigt og effektivt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="opgaven" class="grid1_1">
+          <div id="Icon1" class="grid1_1">
+            <div class="box1">
+              <img class="billede1" src="../billeder/Spørgsmål120.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>Opgaven</h5> </strong> 
+                Jeg skulle lave en passion-site, af en person med en passion.
+Da hverken jeg eller min makker kunne finde en på så kort tid, brugt jeg mig selv og min passion fir Brøndby. 
+
+              </p>
+            </div>
+
+            <div class="box2">
+              <img class="billede2" src="../billeder/Bulb1.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>løsning</h5> </strong> Vi gennemførte en interviewsession med mig selv og optog en række b-roll klip, som blev redigeret sammen til et interview, nøjagtigt på et minut. Derudover blev lyden i interviewet synkroniseret, eventuel baggrundsstøj blev fjernet, og farverne blev justeret i Premiere Pro.
+
+                Der blev også skabt en Lottie-fil i After Effects for at tilføre hjemmesiden en visuel dynamik.
+              </p>
+            </div>
+
+            <div class="box3">
+              <img class="billede3" src="../billeder/flueben.png" alt="" />
+            </div>
+            <div>
+              <p>
+                <strong> <h5>Resultatet</h5> </strong> På passion-sitet blev der implementeret en hero-sektion, hvor en Lottie-fil blev anvendt til at tilføre bevægelse og gøre hjemmesiden levende. Desuden blev interviewet integreret på sitet ved hjælp af både `frame og video attributter for at demonstrere forskellene i præsentationen.
+              </p>
+            </div>
+          </div>
+
+          <div class="box_løsning">
+            <img
+              class="løsning_billede"
+              src="../billeder/Indhold/passionsite.png"
+              width="250px"
+              alt=""
+            />
+            <br />
+            <br />
+
+            <a class="link" href="../../Passionsite/" target="_blank">SE LØSNING</a>
+          </div>
+        </div>
+
+        <!-- sektion 2 - efter sektion1 -->
+      </main>
+
+      <footer>
+        <div class="footer_container">
+          <!-- gør at teksten er i rows -->
+          <div class="row">
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>Kontaktoplysninger</h4>
+              <ul>
+                <li><p>Pardisæblevej 111</p></li>
+                <li><p>Frederiskberg 2000</p></li>
+                <li><p>Telefon: 11223344</p></li>
+                <li><p>Email: Info@web-design.com</p></li>
+              </ul>
+            </div>
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>Personoplysninger</h4>
+              <ul>
+                <li><a href="../website/ommig.html">Om mig</a></li>
+              </ul>
+            </div>
+            <!-- Rækken ned -->
+            <!-- <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div> -->
+            <!-- Rækken ned -->
+            <div class="footer-col">
+              <h4>SoMe Content</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- java til burgermenuen -->
+    <script src="../java/burgermenu.js"></script>
+    <!-- java til slideren  Copyright 2014-2024 Vladimir Kharlampidi- Released under the MIT License -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../java/bannerslider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+
+nav{
+    background: 24262b;
+ 
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li{
+    list-style-type: none;
+}
+
+li a{
+    
+    color: aliceblue;
+}
+
+
+/* @media screen and (max-width: 9500px) { 
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }   
+} */
+
+
+
